@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function menor() {
+            let abc;
+            let usuarios = [
+                {
+                    nombre: "Gino",
+                    edad: 4,
+                },
+                {
+                    nombre: "Juan",
+                    edad: 45,
+                },
+                {
+                    nombre: "Jose",
+                    edad: 30,
+                }
+            ]
+
+            if (usuarios[0].edad < usuarios[1].edad && usuarios[0].edad < usuarios[2].edad) {
+                abc = ("El hermano menor es " + usuarios[0].nombre + " y su edad es " + usuarios[0].edad);
+            }
+            else {
+                if (usuarios[1].edad < usuarios[2].edad && usuarios[1].edad < usuarios[0].edad) {
+                    abc = ("El hermano menor es " + usuarios[1].nombre + " y su edad es " + usuarios[1].edad);}
+                
+                else { abc = ("El hermano menor es " + usuarios[2].nombre + " y su edad es " + usuarios[2].edad) }
+                }
+                console.log(abc)
+            }
+            menor()
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
